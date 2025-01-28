@@ -1,0 +1,102 @@
+/* Header Section */
+.nurses-header {
+  background: linear-gradient(135deg, #003366, #000000);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+/* Header Section */
+
+.header-logo {
+  width: 50px; /* Adjust the logo size */
+  height: 50px;
+}
+
+.header-content a {
+  color: white;
+  text-decoration: none;
+  margin-left: auto; /* Push the 'Home' link to the right */
+}
+
+/* Other Styling (adjustment for Nurse cards, as previously given) */
+.nurses-page {
+  background: linear-gradient(135deg, #cce7ff, #f6f9fc);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.nurses-page h1 {
+  text-align: center;
+  color: #003366;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.nurses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nurse-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nurse-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nurse-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.nurse-card h2 {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.nurse-card p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.nurse-card p:last-child {
+  color: #999;
+  font-style: italic;
+}

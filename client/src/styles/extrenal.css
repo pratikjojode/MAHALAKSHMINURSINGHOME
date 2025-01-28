@@ -1,0 +1,160 @@
+/* Banner Styling */
+.doc-banner {
+  background-image: url("../images/image copy 12.png"); /* Ensure the path is correct */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh; /* Default height */
+  border-radius: 20px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* For overlay positioning */
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* Gradient overlay */
+.doc-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Darker overlay for text contrast */
+  z-index: -1;
+}
+
+/* Banner Heading */
+.doc-banner h1 {
+  font-size: 3rem; /* Default font size */
+  font-weight: 700; /* Bold weight */
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); /* Shadow for emphasis */
+  margin-bottom: 20px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  max-width: 900px;
+  color: black;
+  padding: 0 20px;
+}
+
+/* Banner Paragraph */
+.doc-banner p {
+  font-size: 1.25rem; /* Default paragraph size */
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: black;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* Call to Action Button */
+.doc-banner button {
+  padding: 14px 35px;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+
+/* Button Hover Effect */
+.doc-banner button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .doc-banner {
+    height: 50vh; /* Adjust height for medium screens */
+    padding: 10px 15px;
+  }
+
+  .doc-banner h1 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  .doc-banner p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+  }
+
+  .doc-banner button {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .doc-banner {
+    height: 40vh; /* Adjust height for smaller screens */
+    padding: 10px;
+  }
+
+  .doc-banner h1 {
+    font-size: 2rem; /* Further adjust heading size */
+    line-height: 1.2;
+  }
+
+  .doc-banner p {
+    font-size: 1rem; /* Further adjust paragraph size */
+    max-width: 90%;
+  }
+
+  .doc-banner button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .doc-banner {
+    height: auto; /* Adjust to content size for very small screens */
+    padding: 10px;
+  }
+
+  .doc-banner h1 {
+    font-size: 1.8rem; /* Smaller heading size */
+    margin-bottom: 15px;
+  }
+
+  .doc-banner p {
+    font-size: 0.9rem; /* Smaller paragraph size */
+    margin-bottom: 20px;
+  }
+
+  .doc-banner button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .doc-banner h1 {
+    font-size: 1.5rem; /* Adjust for very narrow screens */
+  }
+
+  .doc-banner p {
+    font-size: 0.8rem;
+  }
+
+  .doc-banner button {
+    font-size: 0.8rem;
+    padding: 6px 15px;
+  }
+}

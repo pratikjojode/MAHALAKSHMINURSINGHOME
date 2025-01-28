@@ -1,0 +1,151 @@
+/* Header Section */
+.services-header {
+  background: linear-gradient(135deg, #003366, #000000);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.header-content ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-content ul li {
+  margin: 0 15px;
+}
+
+.header-content ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Services Section */
+.services-all {
+  background-color: #f9fafc;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-title h1 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.services-title p {
+  color: #606f7b;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  border-top: 4px solid #003366;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #606f7b;
+}
+
+/* Call to Action */
+.cta-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-button button {
+  background-color: #003366;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button button:hover {
+  background-color: #002244;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adds spacing between logo and h1 */
+}
+
+.header-left img {
+  width: 60px;
+  height: auto;
+  border-radius: 8px; /* Optional: Adds rounded corners to the logo */
+}
+
+.header-left h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}

@@ -41,11 +41,6 @@ export const UserMenu = [
     path: "/testimonials",
     icon: "fa-solid fa-quote-right",
   },
-  {
-    name: "Nurses",
-    path: "/nurses",
-    icon: "fa-solid fa-user-nurse",
-  },
 ];
 
 // admin menu

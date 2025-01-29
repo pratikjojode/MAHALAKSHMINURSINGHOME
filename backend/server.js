@@ -10,6 +10,13 @@ const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
 
+app.use(
+  cors({
+    origin: [],
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true,
+  })
+);
 dotenv.config();
 
 connectDb();
@@ -29,6 +36,9 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
+app.get("/", (req, res) => {
+  res.json({ message: "API is running" });
+});
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => {

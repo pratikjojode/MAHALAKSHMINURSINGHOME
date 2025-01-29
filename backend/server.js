@@ -6,7 +6,7 @@ const connectDb = require("./config/db");
 const path = require("path");
 const cors = require("cors");
 const app = express();
-
+const mongoose = require("mongoose");
 app.use(express.json());
 app.use(morgan("dev"));
 
@@ -20,7 +20,7 @@ app.use(
 dotenv.config();
 
 connectDb();
-
+mongoose.connect(process.env.MONGO_URL);
 // Routes for your API
 app.use("/api/v1/user", require("./routes/userRoutes"));
 app.use("/api/v1/doctor", require("./routes/doctorRoutes"));

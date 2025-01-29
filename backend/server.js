@@ -23,7 +23,7 @@ app.use("/api/v1/feedback", require("./routes/feedBackRoute"));
 app.use("/uploads", express.static("uploads"));
 // port
 
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));

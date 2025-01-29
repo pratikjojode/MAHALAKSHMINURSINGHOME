@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const dotenv = require("dotenv");
 const connectDb = require("./config/db");
 const path = require("path");
-
+const cors = require("cors");
 const app = express();
 
 app.use(express.json());

@@ -2,28 +2,36 @@
 .services-header {
   background: linear-gradient(135deg, #003366, #000000);
   color: white;
-  padding: 40px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  margin: 10px;
+  padding: 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+
+  position: relative;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .header-content h1 {
-  font-size: 36px;
+  font-size: 3rem;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .header-content p {
-  font-size: 18px;
+  font-size: 1.2rem;
   margin: 10px 0;
+  color: #ccc;
 }
 
 .header-content ul {
@@ -34,118 +42,152 @@
 }
 
 .header-content ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 .header-content ul li a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-content ul li a:hover {
+  color: #ffcc00; /* Gold hover effect */
 }
 
 /* Services Section */
 .services-all {
   background-color: #f9fafc;
   min-height: 100vh;
-  padding: 50px 20px;
+  padding: 70px 30px;
 }
 
 .services-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .services-title h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #003366;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .services-title p {
+  font-size: 1.2rem;
   color: #606f7b;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Services Grid */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px;
 }
 
 .service-card {
   background-color: white;
   border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
   text-align: center;
-  border-top: 4px solid #003366;
-  transition: box-shadow 0.3s ease-in-out;
+  border-top: 5px solid #003366;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .service-card:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 .service-icon {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #003366;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .service-card h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #003366;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .service-card p {
   color: #606f7b;
+  font-size: 1rem;
 }
 
 /* Call to Action */
 .cta-button {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .cta-button button {
   background-color: #003366;
   color: white;
-  padding: 12px 24px;
-  font-size: 1rem;
+  padding: 15px 30px;
+  font-size: 1.2rem;
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .cta-button button:hover {
   background-color: #002244;
-}
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  transform: translateY(-3px);
 }
 
+/* Header Left Section */
 .header-left {
   display: flex;
   align-items: center;
-  gap: 15px; /* Adds spacing between logo and h1 */
+  gap: 20px; /* Adds more spacing between logo and h1 */
 }
 
 .header-left img {
-  width: 60px;
+  width: 70px;
   height: auto;
-  border-radius: 8px; /* Optional: Adds rounded corners to the logo */
+  border-radius: 10px; /* Rounded corners for the logo */
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-left img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .header-left h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: white;
   margin: 0;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .services-title h1 {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
